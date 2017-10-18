@@ -5,7 +5,9 @@ Play with your Rasperry Pi 3 and led lights. The leds on the breadboard can be t
 
 What is needed: [flask](http://flask.pocoo.org/), [gpio utility](http://wiringpi.com/the-gpio-utility/) and [venv](https://pymotw.com/3/venv/) to isolate the development environment. A server is also needed, I used Apache 2.4.
 
-<img src="/static/2017-10-18-15-46-23.jpg"/>
+<img src="/static/2017-10-18.png"/>
 
 ### to-do
 A better readme with instructions.
+
+
