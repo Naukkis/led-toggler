@@ -82,7 +82,7 @@ To tell the browser the status of the leds (is it on or off), we need to check i
 ```
 ```check_output``` relays the output of a shell command "gpio -g read [pin number]", which is a call to the gpio pin and returns 0 if pin is not active and 1 if it is active. Replace the pin numbers according to your own setup.
 
-Let's save the statuses to ```templateData```:
+Let's save the statuses and the new image to ```templateData```:
 ```
     templateData = {
         'led1status': led1,
