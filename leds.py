@@ -27,13 +27,13 @@ def index():
 
 @app.route('/ledToggle')
 def ledToggle():
-    a = request.args.get('a', 0)
-    b = request.args.get('b', 0)
+    input = request.args.get('input', 0)
+    ledNumber = request.args.get('ledNumber', 0)
 
-    if a == "ON":
-        call(["gpio", "-g", "write", b, "1"])
+    if input == "ON":
+        call(["gpio", "-g", "write", ledNumber, "1"])
     else:
-        call(["gpio", "-g", "write", b, "0"])
+        call(["gpio", "-g", "write", ledNumber, "0"])
 
     return render_template('index.html')
 
