@@ -16,8 +16,8 @@
 			if ($(button_clicked).text() ==  "Set ON") {
 						$(button_clicked).text("Set OFF");		
 						$.getJSON('/ledToggle', {
-							a: "ON",
-							b: ledNumber
+							input: "ON",
+							ledNumber: ledNumber
 							}, function(data) {
 							;
 						});
@@ -25,8 +25,8 @@
 			else {
 				$(button_clicked).text("Set ON");
 				$.getJSON('/ledToggle', {
-					a: "OFF",
-					b: ledNumber
+					input: "OFF",
+					ledNumber: ledNumber
 					}, function(data) {
 					;
 					});
